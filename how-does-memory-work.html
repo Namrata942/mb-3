@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="alternate" type="application/rss+xml" title="MA-20" href="blog/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="MA-20" href="sitemap.xml" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="How does memory work? - MA-20">
+    <meta name="description" content="Transister Node">
+    <meta name="keywords" content="Memory">
+    <meta name="author" content="MBTEST">
+    <title>How does memory work? - MA-20</title>
+    <link rel="shortcut icon" href="MA-20.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://3289568f.resourcestemplate.pages.dev/style.css">
+    <style>
+        .footer-section p:last-of-type{ margin-bottom: 0!important; margin-top: 1rem!important; }
+        .circle li { width: calc(100%/3); float: left; }
+        .show .card-body { border: 1px solid #dcdcdc; }
+        .accordion .card { margin-bottom: 10px; }
+        hr { margin: .5rem!important; background-color: #dcdcdc; }
+        .post-content a{ color: #343f52; }
+        .post-content a:hover{ color: var(--bs-link-hover-color); }
+        h1.display-h1 a:hover{ color: #343f52; }
+        .vertical-menu{ max-height: 400px; max-width: 520px; overflow: auto; }
+        * { scrollbar-width: thin; scrollbar-color: #3f78e0; }
+        /* Works on Chrome, Edge, and Safari */
+        *::-webkit-scrollbar { width: 10px; }
+        *::-webkit-scrollbar-thumb { background-color: #3f78e0; border-radius: 10px; border: 2px solid rgba(250, 249, 247, 0.486); }
+        h1.display-h1 {font-size: 2rem; text-transform:capitalize;}
+        h2.display-h2 {font-size: 1rem; text-transform:uppercase;}
+        a.nav-link, a.dropdown-item{color:}
+        .dynamic-background{background-color:}
+        .vertical-menu a:hover { overflow: visible; white-space: normal; height: auto; }
+        .nav-link:focus, .nav-link:hover{color: #000 !important;}
+    </style>
+    System information
+</head>
+
+<body>
+        <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+            <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark caret-none">
+                <div class="container flex-lg-row flex-nowrap align-items-center">
+                    <div class="navbar-brand w-100">
+                        <a href="index.html">
+                            <img class="logo-dark" src="MA-20.jpg" srcset="MA-20.jpg 2x" rel=&quot;nofollow&quot; alt="MA-20" style="width: 252px; height:67px"/>
+                            <img class="logo-light" src="MA-20.jpg" srcset="MA-20.jpg 2x" rel=&quot;nofollow&quot; alt="MA-20" style="width: 252px; height:67px"/>
+                        </a>
+                    </div>
+                    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                        <div class="offcanvas-header d-lg-none">
+                            <h3 class="text-white fs-30 mb-0">How does memory work?</h3>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="index.html" data-bs-toggle="dropdown" rel=&quot;nofollow&quot; >
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown"><a class="nav-link blog_menu main_page_menu" href="blog/index.html" id="blog_menu">Blog</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" data-bs-toggle="dropdown">More <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu vertical-menu mt-0">
+                                                                                    <li class="nav-item">
+                                                <a class="dropdown-item " href="what-is-memory.html" rel=&quot;nofollow&quot; >
+                                                    
+                                                    What is memory?
+                                                </a>
+                                            </li>
+                                                                                    <li class="nav-item">
+                                                <a class="dropdown-item active" href="how-does-memory-work.html" rel=&quot;nofollow&quot; >
+                                                    
+                                                    How does memory work?
+                                                </a>
+                                            </li>
+                                                                                    <li class="nav-item">
+                                                <a class="dropdown-item " href="what-are-the-different-types-of-memory.html" rel=&quot;nofollow&quot; >
+                                                    
+                                                    What are the different types of memory?
+                                                </a>
+                                            </li>
+                                                                                    <li class="nav-item">
+                                                <a class="dropdown-item " href="how-can-you-improve-your-memory.html" rel=&quot;nofollow&quot; >
+                                                    
+                                                    How can you improve your memory?
+                                                </a>
+                                            </li>
+                                                                                    <li class="nav-item">
+                                                <a class="dropdown-item " href="what-are-the-consequences-of-a-bad-memorytransister.html" rel=&quot;nofollow&quot; >
+                                                    
+                                                    What are the consequences of a bad memory?Transister
+                                                </a>
+                                            </li>
+                                                                            </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.offcanvas-body -->
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <!-- /.navbar-collapse -->
+                    <div class="navbar-other w-100 d-flex ms-auto">
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                                                            <li class="nav-item d-none d-md-block">
+                                    <a href="https://www.oracle.com/in/" class="btn btn-sm btn-primary rounded-pill"
+                                        rel=&quot;nofollow&quot; target="_blank">
+                                        Contact
+                                    </a>
+                                </li>
+                                                        <li class="nav-item d-lg-none">
+                                <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                            </li>
+                        </ul>
+                        <!-- /.navbar-nav -->
+                    </div>
+                    <!-- /.navbar-other -->
+                </div>
+                <!-- /.container -->
+            </nav>
+            <!-- /.navbar -->
+
+        </header>
+        <!-- /header -->
+        <section class="wrapper bg-soft-primary mt-12">
+            <div class="container pb-md-15 text-center">
+                <div class="row">
+                    <div class="col-md-10 mx-auto mt-5">
+                        <div class="post-header">
+                            <!-- /.post-category -->
+                            <h1 class="display-h1 mb-4 px-lg-14">
+                                
+                                <!-- Single Page Mode (All pages move to target url) -->
+                                    <a href="https://ma20.com" data-org="https://ma20.com">
+                                        How does memory work?
+                                    </a>
+                                                            </h1>
+                        </div>
+                        <!-- /.post-header -->
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+
+        <section class="wrapper bg-light">
+            <div class="container pb-md-10">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="blog single mt-n17">
+                            <div class="card mt-10">
+                                <div class="card-body">
+                                    <div class="classic-view">
+                                        <article class="post">
+                                            <div class="post-content mb-5">
+                                                
+                                                <h2 class="display-h2 mb-4 text-center d-none">
+                                                                                                    </h2>
+
+                                                                                                    <p>When you think about it, memory is one of the most essential and fascinating aspects of human existence. Our memories are what allow us to learn from our experiences and make adjustments in the future based on what we have learned in the past. Memory is one of the most complex processes in the human brain, and it is a combination of several different processes working together at once. In this article, we explain what memory is, how it works, and some of its lesser-known functions so that you understand it better and can apply it to everyday life. Let’s take a closer look at what you need to know about memory…</p><h2>What is memory?</h2><p>In its most basic form, memory is the ability to remember things. While this may seem like a very simple definition, the concept is actually incredibly complex. Memory is a process that allows us to store information and recall it at a later date. When we remember something, we are bringing back information that we have seen, heard, smelled, tasted, or touched before. This information is stored in our brains, and when we need to recall it, we can bring it back to mind. Memory can be a good thing or a bad thing, depending on what it is being used for and how it is being applied.When we say someone has a good memory, we are talking about someone who is able to remember a lot of specific details. A person with a good memory will have an easier time recalling information from the past, such as dates, phone numbers, and addresses. A person with a bad memory will have a much more difficult time remembering things, especially if the information being recalled was not particularly important.A person with a good memory can also be referred to as someone who has a sharp memory. A sharp memory is associated with someone who is able to process information quickly and easily.</p><h2>How does your brain store your memories?</h2><p>As we mentioned, your brain is where all of your memories are stored. The brain is made up of many different parts, and each part has a specific function. The part of the brain that is responsible for storing memories is called the hippocampus. The hippocampus is part of the limbic system, which plays a role in our emotions. The hippocampus is also connected to the visual cortex, auditory cortex, and the corpus callosum. The visual cortex is responsible for processing visual information, while the auditory cortex is responsible for processing auditory information. The corpus callosum is a large bundle of nerve fibers that connects the two cerebral hemispheres of the brain. The visual cortex, auditory cortex, and the corpus callosum are all parts of the brain that are used when we are trying to remember something.The visual cortex is responsible for converting images into patterns of nerve impulses that can be sent to the hippocampus. The auditory cortex is responsible for converting sound into nerve impulses that can be sent to the hippocampus. The corpus callosum is responsible for sending nerve impulses from the left hemisphere of the brain to the right hemisphere.</p><h2>How do you know if you have a good or bad memory?</h2><p>At this point, you might be wondering if there are any ways to test your memory and see if it is good or bad. The truth is that there are no standardized tests that measure your memory. However, there are a few signs that can tell you if your memory is good or bad. If you consistently find yourself forgetting your phone number or date when someone calls you, you may have a bad memory. If you have a hard time remembering where you put your keys or glasses, you may have a bad memory. If you find yourself having to write things down or remind yourself to do things, you may have a bad memory. If you find yourself constantly misplacing things, you may have a bad memory. If you have trouble remembering the names of people you have met before, you may have a bad memory. If you have a hard time remembering the lyrics to your favorite songs, you may have a bad memory. If you have a hard time remembering what you had for breakfast this morning, you may have a bad memory.</p><h2>Why is remembering things important?</h2><p>The ability to remember things is an important part of being human. It allows us to build on the knowledge we have gained over the years and apply it to new situations. It also allows us to take advantage of our past experiences to solve problems and make better decisions in the future. For example, if you are trying to remember a new phone number, you can look up the number in a phone book and then write it down. If you have to remember to do something at a certain time, you can put a note on your computer, tablet, or phone to remind you. If you are trying to remember a long list of items, you can use a mnemonic device, such as the “lisa” technique, to help you keep the information in your head.</p><h2>The importance of sleep and dreams</h2><p>As we mentioned earlier, the visual cortex, auditory cortex, and the corpus callosum are all parts of the brain that are used when we are trying to remember something. The visual cortex is responsible for converting images into patterns of nerve impulses that can be sent to the hippocampus. The auditory cortex is responsible for converting sound into nerve impulses that can be sent to the hippocampus. The corpus callosum is responsible for sending nerve impulses from the left hemisphere of the brain to the right hemisphere. The right hemisphere of the brain is responsible for processing emotions, while the left hemisphere of the brain is responsible for processing language. Sleep is when the brain is in a relaxed state and is able to process information and strengthen connections between neurons, which is why we often have dreams when we sleep. While in the dream state, we are often able to process emotions and experiences that have been stored in our subconscious. When we are awake, we are not in a relaxed state and are not able to process information as well. This is why we often have trouble remembering things when we are awake and have trouble recalling dreams when we are sleeping.</p><h2>Cognitive behavioural therapy (CBT)</h2><p>If you are having trouble with your memory, you may want to look into cognitive behavioural therapy (CBT). CBT is a form of psychotherapy that is used to treat a wide variety of mental health issues. One of the ways CBT is used to treat issues related to memory is by identifying negative thought patterns that are affecting your ability to remember things. Negative thoughts can often be identified by asking yourself questions, such as “What is keeping me from remembering?” or “What is getting in the way of my ability to remember?” Once you have identified these negative thoughts, you can work to change them so that they are less negative and more helpful.</p><h2>Conclusion</h2><p>Remembering things is an important part of being human, and it is something that we all have to do. However, it is important to remember that while we can all improve our memories, they are not set in stone. Memory is a complex process that is made up of many different parts working together at the same time. You can improve your memory by taking advantage of your senses and by challenging yourself with new information.</p>
+                                                                                            </div>
+                                            <!-- /.post-content -->
+                                        </article>
+                                        <!-- /.post -->
+                                    </div>
+                                    <!-- /.classic-view -->
+
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.blog -->
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+    </div>
+
+            <section class="wrapper bg-light pt-7 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <iframe width="100%" height="450px" src="https://www.youtube.com/embed/RXRT3dHu6_o"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+            <section class="wrapper bg-light pt-7 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <iframe src="https://maps.google.com/" width="100%" height="480">Link wheel with spokes Title</iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+            <section class="wrapper bg-light pt-7 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <a class="twitter-moment" href="https://twitter.com/i/moments/786977730147516416?ref_src=twsrc%5Etfw "></a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+            <section class="wrapper bg-light pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h3>Frequently Asked Question</h3>
+                            </div>
+                        </div>
+                        <div class="accordion" id="faq">
+                                                            <div class="card mb-0">
+                                    <div class="card-header">
+                                        <a data-toggle="collapse" href="#collapse0">
+                                            What is system application in computer?
+                                        </a>
+                                    </div>
+                                    <div id="collapse0" class="collapse" data-parent="#faq">
+                                        <div class="card-body">
+                                            <p>If allocation failed due to some reason, check the log row status is properly updating or not.&gt;&gt;&gt;Completed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    <!-- /.content-wrapper -->
+    <footer class="bg-dark text-inverse">
+        <div class="container py-md-10">
+            <div class="row gy-6 gy-lg-0">
+                                    <div class="col-md-12 text-center">
+                        <p>
+                            <a href="http://www.constacloud.com"  data-org="www.constacloud.com"
+                                rel='nofollow' target="_top" >
+                                MB InfoTech
+                            </a>
+                        </p>
+                    </div>
+                
+                <div class="col-md-4">
+                    <div class="widget">
+                        <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+                                                    <address class="mb-0">
+                                                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                1280 W Washington, Stephenville, Texas, 76401
+                            </address>
+
+                                                            <p class="mb-0">
+                                    <a href="mailto:muktakyj@gmail.com">
+                                        muktakyj@gmail.com
+                                    </a>
+                                </p>
+                            
+                                                            <p class="mb-0">
+                                    <a href="tel:01234567890">01234567890</a>
+                                </p>
+                                                    
+                                                    <p class="mb-0">
+                                <a href="https://www.amazon.in/" target="_blank" data-org="https://www.amazon.in/"
+                                    rel='nofollow'>
+                                    Google Business Profile
+                                </a>
+                            </p>
+                        
+                                                    <p class="mb-0">
+                                <a href="https://www.saucedemo.com/" target="_blank" data-org="https://www.saucedemo.com/"
+                                    rel='nofollow&#039;'>
+                                    Google Business Website
+                                </a>
+                            </p>
+                                            </div>
+                    <!-- /.widget -->
+
+                                            <nav class="nav social social-white">
+                                                            <a href="https://www.facebook.com/" target="_blank" data-org="https://www.facebook.com/"
+                                    rel=''>
+                                        <i class="fa fa-facebook-f"></i>
+                                </a>
+                            
+                                                            <a href="https://www.linkedin.com/login" target="_blank" data-org="https://www.linkedin.com/login"
+                                    rel=''>
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            
+                                                            <a href="https://twitter.com/i/flow/login" target="_blank" data-org="https://twitter.com/i/flow/login"
+                                    rel=''>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            
+                                                            <a href="https://www.instagram.com/?hl=en" target="_blank" data-org="https://www.instagram.com/?hl=en"
+                                    rel=''>
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                            
+                                                            <a href="https://www.tumblr.com/login" target="_blank" data-org="https://www.tumblr.com/login"
+                                    rel=''>
+                                        <i class="fa fa-tumblr"></i>
+                                    </a>
+                            
+                                                            <a href="http://T-series" target="_blank" data-org="T-series"
+                                    rel='nofollow'>
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                                    </nav>
+                                        <!-- /.social -->
+                </div>
+                <!-- /column -->
+                <div class="col-md-4">
+                                            <div class="widget">
+                            <h4 class="widget-title text-white mb-3">Useful Links</h4>
+                            <ul class="list-unstyled  mb-0">
+                                                                                                            <li>
+                                            <a href="https://login.bigcommerce.com/login" target="_blank" data-org="https://login.bigcommerce.com/login"
+                                                rel='nofollow' title="MB">
+                                                    MB
+                                            </a>
+                                        </li>
+                                                                                                                                                                    </ul>
+                        </div>
+                                        <!-- /.widget -->
+                </div>
+
+                <div class="col-md-4">
+                                            <div class="widget">
+                            <h4 class="widget-title text-white mb-3">Useful Blogs</h4>
+                            <ul class="list-unstyled  mb-0">
+                                                                                                                                                                                <li>
+                                            <a href="https://login.bigcommerce.com/login" target="_blank" data-org="https://login.bigcommerce.com/login"
+                                                rel='nofollow' title="MV">
+                                                    MV
+                                            </a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                                        <!-- /.widget -->
+                </div>
+            </div>
+
+            <!--/.row -->
+            <div class="row footer-section">
+                <div class="col-md-6 text-left">
+
+                                            <a href="sitemap.html" target="_blank"
+                            rel=&#039;nofollow&#039;>
+                                Site Map
+                        </a>
+                    
+                                            |
+                    
+                                            <a href="privacy-policy.html" target="_blank"
+                            rel=&#039;nofollow&#039;>
+                                Privacy Policy
+                        </a>
+                                    </div>
+
+                                    <div class="col-md-12 text-center">
+                        <p>System Specifications</p>
+                    </div>
+                            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://855ae9b9.resourcestemplate.pages.dev/plugins.js"></script>
+    <script src="https://855ae9b9.resourcestemplate.pages.dev/theme.js"></script>
+</body>
+
+</html>
